@@ -131,6 +131,8 @@ const mutation = new GraphQLObjectType({
           status: args.status,
           clientId: args.clientId,
         });
+
+        return project.save();
       },
     },
   },
