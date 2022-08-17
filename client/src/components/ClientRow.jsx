@@ -12,7 +12,7 @@ export default function ClientRow({ client }) {
       cache.writeQuery({
         query: GET_CLIENTS,
         data: {
-          client: clients.fliter((client) => client.id !== deleteClient.id),
+          clients: clients.fliter((client) => client.id !== deleteClient.id),
         },
       });
     },
