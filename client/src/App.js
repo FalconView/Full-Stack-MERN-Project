@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import { ApolloProvider, ApolloeClient, InMemoryCache } from "@apollo/client";
 
 function App() {
   return (
