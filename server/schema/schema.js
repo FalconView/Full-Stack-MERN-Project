@@ -9,7 +9,6 @@ const {
   GraphQLSchema,
   GraphQLList,
   GraphQLNonNull,
-  GraphQLScalarType,
   GraphQLEnumType,
 } = require("graphql");
 

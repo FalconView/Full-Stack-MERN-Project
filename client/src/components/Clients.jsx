@@ -8,6 +8,7 @@ export default function Clients() {
 
   if (loading) return <Spinner />;
   if (error) return <p>Something Went Wrong!</p>;
+
   return (
     <>
       {!loading && !error && (

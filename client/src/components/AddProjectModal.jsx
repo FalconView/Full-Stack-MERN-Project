@@ -110,7 +110,7 @@ export default function AddClientModal() {
                       >
                         <option value="new">Not Started</option>
                         <option value="progress">In Progress</option>
-                        <option value="completed">completed</option>
+                        <option value="completed">Completed</option>
                       </select>
                     </div>
 
