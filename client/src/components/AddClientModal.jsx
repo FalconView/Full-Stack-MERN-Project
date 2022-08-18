@@ -51,13 +51,13 @@ export default function AddClientModal() {
       <div
         className="modal fade"
         id="addClientModal"
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="addClientModalLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">
+              <h5 className="modal-title" id="addClientModalLabel">
                 Add Client
               </h5>
               <button
