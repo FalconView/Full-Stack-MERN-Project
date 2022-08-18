@@ -4,9 +4,20 @@ import { GET_PROJECT } from "../queries/projectQueries";
 import { UPDATE_PROJECT } from "./mutations/projectMutations";
 
 export default function EditProjectForm({ project }) {
-  const [name, setName] = useState("project.name");
-  const [description, setDescription] = useState("project.description");
-  const [status, setStatus] = useState("");
+  const [name, setName] = useState(project.name);
+  const [description, setDescription] = useState(project.description);
+  const [status, setStatus] = useState(() => {
+    switch (project.status) {
+      case "Not Started":
+        return "new";
+      case "In Progress":
+        return "progress";
+      case "Completed":
+        return "Completed";
+      default:
+        throw new Error(`Unknown status: ${project.status}`);
+    }
+  });
 
   const [updateProject] = useMutation(UPDATE_PROJECT, {
     variables: { id: project.id, name, description, status },
